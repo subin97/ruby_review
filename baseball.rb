@@ -1,11 +1,13 @@
 my_num=Array.new
 count=0
 rand_num=(1..9).to_a.sample(3).sort
+
 while true
     count+=1
-    ball=0, strike=0
+    ball=0
+    strike=0
     for i in 0..2 do
-        my_num[i]=gets.chomp
+        my_num[i]=gets.chomp.to_i
     end
     
     for i in 0..2
